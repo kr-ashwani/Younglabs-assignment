@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import useUsers from '../../hooks/useUsers';
 import UserListCard from '../UserListCard/UserListCard';
 import './UserList.css';
