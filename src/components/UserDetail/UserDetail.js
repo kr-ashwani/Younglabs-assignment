@@ -3,6 +3,7 @@ import './UserDetail.css';
 import UserList from '../UserList/UserList';
 import useUsers from '../../hooks/useUsers';
 import SelectedUserInfo from '../SelectedUserInfo/SelectedUserInfo';
+import Loading from '../Loading/Loading';
 
 const UserDetail = () => {
   const { users } = useUsers();
@@ -12,7 +13,9 @@ const UserDetail = () => {
       <UserList></UserList>
     </>
   ) : (
-    <p>loading....</p>
+    <div className="pageLoading">
+      <Loading></Loading>
+    </div>
   );
 };
 
