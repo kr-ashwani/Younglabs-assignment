@@ -3,8 +3,8 @@ import useUsers from '../../hooks/useUsers';
 import './UserListCard.css';
 
 const UserListCard = ({ userInfo }) => {
-  const userName =
-    userInfo.name.title + ' ' + userInfo.name.first + ' ' + userInfo.name.last;
+  const { title, first, last } = userInfo.name;
+  const userName = title + ' ' + first + ' ' + last;
 
   const userCardRef = useRef();
   const { users, setSelectedUser } = useUsers();
