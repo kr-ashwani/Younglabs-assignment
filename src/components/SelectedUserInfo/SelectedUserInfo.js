@@ -17,10 +17,10 @@ const SelectedUserInfo = () => {
       <div className="userInfo">
         <p className="userName">{userName}</p>
         <div className="userAddress">
-          <p>
+          <div>
             <span className="streetNum">{street.number}</span>, {street.name},
             Born, {state}, <h4 className="country"> {country}</h4>, {postcode}
-          </p>
+          </div>
           <p>
             {timezone.offset} - {timezone.description}
           </p>
