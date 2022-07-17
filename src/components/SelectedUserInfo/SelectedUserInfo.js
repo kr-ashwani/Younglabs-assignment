@@ -8,8 +8,7 @@ const SelectedUserInfo = () => {
   console.log(selectedUser);
   const { title, first, last } = selectedUser.name;
   const userName = title + ' ' + first + ' ' + last;
-  const { city, country, postcode, state, timezone, street } =
-    selectedUser.location;
+  const { country, postcode, state, timezone, street } = selectedUser.location;
   return (
     <div className="userDetail">
       <div className="userLogo">
