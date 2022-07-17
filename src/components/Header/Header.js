@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header>
       <div className="appLogo">
-        <h2>YourChallenge</h2>
+        <p className="heading">YourChallenge</p>
       </div>
       <div className="nav">
         <ul ref={listRef}>
