@@ -52,7 +52,7 @@ header {
 
 @media only screen and (max-width: 420px) {
   .nav > ul {
-    gap: 6px;
+    gap: 10px;
     font-size: 15px;
   }
   .appLogo > .heading {
