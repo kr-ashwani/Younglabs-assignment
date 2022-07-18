@@ -21,6 +21,12 @@ const Header = () => {
         elem.removeEventListener('mouseover', moveUnderLine);
       });
   }, []);
+  useEffect(() => {
+    const child = Array.from(listRef.current.children)[0];
+    underLineRef.current.style.transform = `scaleX(${
+      child.offsetWidth / underLineRef.current.offsetWidth
+    })`;
+  }, []);
   return (
     <header>
       <div className="appLogo">
