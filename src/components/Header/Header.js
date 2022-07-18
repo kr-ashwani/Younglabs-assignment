@@ -13,12 +13,12 @@ const Header = () => {
       }px) scaleX(${e.target.offsetWidth / underLineRef.current.offsetWidth})`;
     }
     Array.from(listRef.current.children).forEach((elem) => {
-      elem.addEventListener('mouseover', moveUnderLine);
+      elem.addEventListener('click', moveUnderLine);
     });
     const mem = listRef.current;
     return () =>
       Array.from(mem.children).forEach((elem) => {
-        elem.removeEventListener('mouseover', moveUnderLine);
+        elem.removeEventListener('click', moveUnderLine);
       });
   }, []);
   useEffect(() => {
