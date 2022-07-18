@@ -32,11 +32,7 @@ header {
   transform-origin: left;
   background-color: #e16259;
   opacity: 1;
-  /* transform: translateX(calc(100% + 10px)); */
 }
-/* .nav:hover > .underLine {
-  opacity: 1;
-} */
 .appLogo > .heading {
   font-family: 'Roboto';
   font-style: normal;
