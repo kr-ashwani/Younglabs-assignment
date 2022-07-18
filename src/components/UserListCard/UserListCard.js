@@ -34,7 +34,9 @@ const UserListCard = ({ userInfo }) => {
       </p>
       <p className="userName">{userName}</p>
       <p data-email={`${userInfo.email}`}>
-        <a href={`mailto:${userInfo.email}`}>{userInfo.email}</a>
+        <a href={`mailto:${userInfo.email}`} target="_self">
+          {userInfo.email}
+        </a>
       </p>
     </div>
   );
