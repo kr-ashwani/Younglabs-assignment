@@ -26,7 +26,12 @@ const Header = () => {
     underLineRef.current.style.transform = `scaleX(${
       child.offsetWidth / underLineRef.current.offsetWidth
     })`;
+    setTimeout(() => {
+      underLineRef.current.style.transition =
+        'opacity 200ms ease-in-out, transform 200ms ease-in-out';
+    }, 10);
   }, []);
+
   return (
     <header>
       <div className="appLogo">

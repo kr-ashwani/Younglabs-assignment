@@ -31,13 +31,12 @@ header {
   height: 2.5px;
   transform-origin: left;
   background-color: #e16259;
-  opacity: 0;
-  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  opacity: 1;
   /* transform: translateX(calc(100% + 10px)); */
 }
-.nav:hover > .underLine {
+/* .nav:hover > .underLine {
   opacity: 1;
-}
+} */
 .appLogo > .heading {
   font-family: 'Roboto';
   font-style: normal;
