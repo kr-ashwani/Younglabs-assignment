@@ -5,7 +5,6 @@ import './SelectedUserInfo.css';
 
 const SelectedUserInfo = () => {
   const { selectedUser } = useUsers();
-  console.log(selectedUser);
   const { title, first, last } = selectedUser.name;
   const userName = title + ' ' + first + ' ' + last;
   const { country, postcode, state, timezone, street } = selectedUser.location;
